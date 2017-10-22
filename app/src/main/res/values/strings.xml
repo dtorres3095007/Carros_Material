@@ -53,7 +53,7 @@
         <item>@string/toyota</item>
         <item>@string/kia</item>
     </string-array>
-    <string name="title_activity_detalle__persona">Detalle_Persona</string>
+    <string name="title_activity_detalle__persona">Detalle_Carro</string>
     <string name="color">Color</string>
     <string name="titulo_eliminar_mensaje">Eliminar Carro</string>
     <string name="eliminar_mensaje">¿Está seguro que desea elminar este carro ?</string>

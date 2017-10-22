@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Carros_Material</string>
+    <string name="action_settings">action_settings</string>
+    <string name="audi">Audi</string>
+    <string name="azul">Blue</string>
+    <string name="blanco">White</string>
+    <string name="borrar">Clear</string>
+    <string name="cancelar">Cancel</string>
+    <string name="chevrolet">Chevrolet</string>
+    <string name="color">Color</string>
+    <string name="crear">Add Cars</string>
+    <string name="datos_carro">Data to Car</string>
+    <string name="eliminar">Delete</string>
+    <string name="eliminar_mensaje">Are you sure you want to delete this car?</string>
+    <string name="existe_placa">he car plate is already registered</string>
+    <string name="guardar">Add</string>
+    <string name="guardar_carros">Add Cars</string>
+    <string name="informacion">Data to Car</string>
+    <string name="kia">Kia</string>
+    <string name="listar">List Cars</string>
+    <string name="marca">Band</string>
+    <string name="mensaje_error_placa">Enter Plate</string>
+    <string name="mensaje_error_precio">Enter Price</string>
+    <string name="mensaje_guardado">Car saved successfully</string>
+    <string name="mensaje_modificado">Car Modified With Success</string>
+    <string name="mo_2005">2005</string>
+    <string name="mo_2014">2014</string>
+    <string name="mo_2016">2016</string>
+    <string name="mo_2018">2018</string>
+    <string name="modelo">Model</string>
+    <string name="modificar">Modify</string>
+    <string name="modificar_carro">Modify Car</string>
+    <string name="negro">Black</string>
+    <string name="no_eliminar_mensaje">No</string>
+    <string name="placa">Plate</string>
+    <string name="precio">Price</string>
+    <string name="si_eliminar_mensaje">Yes</string>
+    <string name="titulo_eliminar_mensaje">Delete Cars</string>
+    <string name="toyota">Toyota</string>
+    <string name="title_activity_detalle__persona">car detail</string>
+</resources>
