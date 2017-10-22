@@ -54,8 +54,12 @@ public class Guardar_Carros extends AppCompatActivity {
     public void guardar(View v){
 
 
-        if (placa.getText().length() ==0 || precio.getText().length() ==0){
-            Toast.makeText(this, res.getString(R.string.mensaje_error), Toast.LENGTH_SHORT).show();
+        if (placa.getText().length() ==0 ){
+            Toast.makeText(this, res.getString(R.string.mensaje_error_placa), Toast.LENGTH_SHORT).show();
+            placa.requestFocus();
+        }else if (precio.getText().length() ==0){
+            Toast.makeText(this, res.getString(R.string.mensaje_error_precio), Toast.LENGTH_SHORT).show();
+            precio.requestFocus();
         }else {
             String placa_caja;
             double precio_caja;
@@ -65,13 +69,18 @@ public class Guardar_Carros extends AppCompatActivity {
             modelo_caja = sp_modelo.getSelectedItemPosition();
             marca_caja = sp_marca.getSelectedItemPosition();
             color_caja = sp_color.getSelectedItemPosition();
-
+        if (datos.ExistePlacaIndex(placa_caja)){
+            Toast.makeText(this, res.getString(R.string.existe_placa), Toast.LENGTH_SHORT).show();
+            placa.setText("");
+            placa.requestFocus();
+        }else{
 
             Carro p = new Carro(placa_caja, marca_caja, modelo_caja, color_caja, precio_caja, datos.fotoAleatoria(fotos));
             p.Guardar();
 
             Toast.makeText(this, res.getString(R.string.mensaje_guardado), Toast.LENGTH_SHORT).show();
             limpiar();
+        }
         }
     }
 

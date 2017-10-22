@@ -20,7 +20,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".Guardar_Carros" />
-        <activity android:name=".Detalle_Carro" android:theme="@style/AppTheme.NoActionBar" ></activity>
+        <activity
+            android:name=".Detalle_Carro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Modificar"></activity>
     </application>
 
 </manifest>

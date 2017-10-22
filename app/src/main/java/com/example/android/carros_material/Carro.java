@@ -21,7 +21,19 @@ public class Carro {
         this.precio = precio;
         this.foto = foto;
     }
+    public Carro(String placa, int marca, int modelo, int color, double precio,int foto,String id) {
+        this.placa = placa;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.color = color;
+        this.precio = precio;
+        this.id=id;
+        this.foto = foto;
+    }
     public Carro(){
+    }
+    public Carro(String id) {
+    this.id=id;
     }
     public String getPlaca() {
         return placa;
@@ -74,7 +86,12 @@ public class Carro {
     public void Guardar(){
         datos.guardarCarros(this);
     }
-
+    public void Eliminar(){
+        datos.eliminarCarro(this);
+    }
+    public void Modificar(){
+        datos.ModificarCarro(this);
+    }
     public String getId() {
         return id;
     }

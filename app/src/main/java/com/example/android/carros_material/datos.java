@@ -38,27 +38,26 @@ public class datos {
         fotoSel = r.nextInt(fotos.size());
         return fotos.get(fotoSel);
     }
-/*
-    public static void setPersonas(ArrayList<Persona> per){
-        personas=per;
-    }
 
-    public static void eliminarPersona(Persona p){
+
+
+    public static void eliminarCarro(Carro p){
         databaseReference.child(db).child(p.getId()).removeValue();
 
     }
-    public static int ExistePersonaIndex(String cedula){
-        Log.i("TEST",""+personas.size());
-        for (int i = 0; i < personas.size(); i++) {
-            if (personas.get(i).getCedula().equals(cedula)){
-                return i;
+
+    public static boolean ExistePlacaIndex(String placa){
+
+        for (int i = 0; i < carros.size(); i++) {
+            if (carros.get(i).getPlaca().equalsIgnoreCase(placa)){
+                return true;
             }
         }
-        return -1;
+        return false;
 
     }
-    public static void Modificar(Persona p) {
+    public static void ModificarCarro(Carro p) {
         databaseReference.child(db).child(p.getId()).setValue(p);
     }
-*/
+
 }
