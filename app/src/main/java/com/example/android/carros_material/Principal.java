@@ -111,6 +111,7 @@ public class Principal extends AppCompatActivity implements AdaptadorCarro.OnCar
         b.putInt("marca",p.getMarca());
         b.putInt("modelo",p.getModelo());
         b.putString("placa",p.getPlaca());
+        b.putString("id",p.getId());
         b.putDouble("precio",p.getPrecio());
         b.putDouble("color",p.getPrecio());
         b.putInt("foto",p.getFoto());
